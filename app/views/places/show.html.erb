@@ -1,0 +1,10 @@
+<h1> <%= @place.name %> </h1>
+
+<h3> Posts </h3>
+<ul>
+<% for post in @place.posts %>
+<li> <%= post.title %>, <%= post.posted_on %>, <%= post.description %> </li>
+    <% end %>
+<p>
+    <a href = "/places"> Go back to all places </a>
+</p>
