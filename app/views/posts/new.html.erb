@@ -2,10 +2,14 @@
 
 <%= form_with model: @post do |form| %>
   <p>
-    <%= form.label "title" %>
+    <%= form.label "title", "Title of Post" %>
     <%= form.text_field "title" %>
+  </p>
+  <p>
     <%= form.label "description" %>
-    <%= form.text_field "description" %>
+    <%= form.text_field "description", size:50 %>
+  </p>
+  <p>
     <%= form.label "posted_on" %>
     <%= form.date_field "posted_on" %>
   </p>

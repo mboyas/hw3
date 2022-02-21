@@ -1,16 +1,18 @@
 <h1> <%= @place.name %> </h1>
 
 <% for post in @place.posts %>
-    <p><strong><font size="+2"><%= post.title %></strong></font><br>
+    <p>
+    <strong><font size="+2"><%= post.title %></strong></font><br>
     <%= post.posted_on %><br>
     <%= post.description %>
     </p>
     <% end %>
 
-<p>
-    <a href = "/places"> Go back to all places </a>
-</p>
 
 <p>
 <a href="/posts/new?place_id=<%= @place.id %>"> New Post </a>
+</p>
+
+<p>
+<a href = "/places"> Go back to all places </a>
 </p>
